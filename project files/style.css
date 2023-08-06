@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root {
+    --default-height: 45px
+}
+body {
+    background-image: url("https://images.pexels.com/photos/316137/pexels-photo-316137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 100vw;
+    min-height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 70px 0px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.full_box {
+    background: rgba(21, 189, 236, 0.337);
+    backdrop-filter: blur(10px);
+    width: 85%;
+    height: auto;
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: -22px -2px 95px 9px rgba(0,0,0,0.12);
+-webkit-box-shadow: -22px -2px 95px 9px rgba(0,0,0,0.12);
+-moz-box-shadow: -22px -2px 95px 9px rgba(0,0,0,0.12);
+}
+.form_input {
+    text-align: center;
+    display: block;
+
+}
+.head_ing {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #efb804;
+    pointer-events: none;
+    user-select: none;
+   
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0px;
+    color: #f9f9f9;
+    text-shadow: 2px 2px 6px #2b2a2a54;
+}
+.data {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+#input {
+    width: 50vw;
+    height: var(--default-height);
+    padding: 17px 12px;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    font-size: 16px;
+}
+.btn {
+    background: #54a5e7;
+    padding: 0px 15px;
+    margin-left: -10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: none;
+    color: #f9f9f9;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    height: var(--default-height);
+    transition: all 1s;
+}
+.btn:hover {
+    background: #dfe4e8;
+}
+
+/* ben css */
+.weather-predictions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.weather-predictions > * {
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 30px;
+    gap: 10px;
+}
+.weather-predictions > *:nth-child(odd) {
+    background-color: #54a5e7;
+}
+.weather-predictions > *:nth-child(even) {
+    background-color: rgb(85, 210, 177);
+}
+
+/* suggestions */
+#suggestions{
+    text-align: start;
+    position: absolute;
+    top: var(--default-height);
+    background-color: transparent;
+    width:auto;
+    padding: 5px 0px;
+    font-size: 19px;
+    color: #f4f3f3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#suggestions > *:hover {
+    background: #000000;
+    cursor: pointer;
+}
+.temperature {
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 600;
+    color: rgb(23, 21, 21);
+    text-shadow: 0px 0px 4px rgb(240, 240, 240);
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+.weather-status {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.location-details span {
+    font-weight: 600;
+    color: rgb(240, 242, 240);
+}
+.image-icon-prediction {
+    height: 50px;
+}
+
+
+@media screen and (max-width: 600px){
+    :root {
+        --default-height: 35px
+    }
+    h1 {
+        font-size: 18px;
+        text-shadow: 0px 0px 0px  transparent;
+        
+    }
+    #input {
+        width: 55vw;
+        font-size: 11px;
+        padding: 10px 11px;
+    }
+    .btn {
+        padding: 0px 10px;
+        font-size: 11px;
+    }
+    .weather-predictions > *{
+        padding: 10px;
+    }
+}
