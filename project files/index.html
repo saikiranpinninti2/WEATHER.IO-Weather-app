@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Bubbles&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer ></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="full_box">
+        <div class="form_input">
+           
+                <h1 class="head_ing">Weather App</h1>
+                <div class="data">
+                    <input type="text" id="input" placeholder="Search your City Here..." />
+                    <button class="btn">Enter</button>
+                    <div id="suggestions"></div>
+                </div>
+          
+            <div class="output">
+                <h1 class="city-searched">
+                    
+                </h1>
+                <div class="weather-status">
+                    
+                </div>
+                <img src="./icons/01d.png" alt="" class="image-icon">
+                <div class="temperature">
+                    <span class="temp-value"></span>°C
+                </div>
+                <p class="time">
+
+                </p>
+                <div class="location-details">
+                    <p>Min/Max Temp: <span class="minMax"></span> </p>
+                    <p>Humidity: <span class="humidity"></span>%</p>
+                    <p>Pressure: <span class="pressure"></span>psi</p>
+                    <p>Sea-Level: <span class="sea-level"></span> Above sea level</p>
+                </div>
+                <div class="weather-predictions">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
